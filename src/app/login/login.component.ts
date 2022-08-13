@@ -49,10 +49,31 @@ this.acno=event.target.value
 
   // login()
  // event binding
-login(){
+// login(){
 
-  var acno=this.acno
-  var pswd=this.pswd
+//   var acno=this.acno
+//   var pswd=this.pswd
+//   var userDetails=this.userDetails
+
+//   if(acno in userDetails){
+//     if(pswd==userDetails[acno]['password']){
+// alert('login succesful')
+//     }
+//     else{
+//       alert('incorrect password')
+//     }
+
+//   }
+// else{
+//   alert("doesnot exist")
+// }
+// }
+
+login(a:any,b:any){
+console.log(a.value);
+
+  var acno=a.value
+  var pswd=b.value
   var userDetails=this.userDetails
 
   if(acno in userDetails){
